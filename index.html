@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Seatwork 1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="p-4 bg-light shadow rounded">
+
+            <div class="mb-3 text-center">
+                <h1><strong>Log In</strong></h1>
+            </div>
+
+            <div class="p-3 bg-white rounded">
+                <details ontoggle="if(this.open) alert('TEST CREDENTIALS: \nusername: joseph \npassword: sixseven')">
+                    <summary class="btn btn-sm btn-outline-secondary mb-3">
+                        View Login Help
+                    </summary>
+                    <p class="small text-muted">
+                        Enter the credentials shown in the alert box.
+                    </p>
+                </details>
+
+                <div class="mb-3">
+                    <label class="form-label"><strong>Username</strong></label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter Username">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><strong>Password</strong></label>
+                    <input type="password" id="pass" class="form-control" placeholder="Enter Password">
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="logged" class="form-check-input">
+                    <label for="logged" class="form-check-label">Stay logged in</label>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-success w-25" onclick="checkLogin()">Login</button>
+                    <button class="btn btn-danger w-25" onclick="window.location.reload()">Cancel</button>
+                </div>
+
+                <hr class="mt-4">
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
